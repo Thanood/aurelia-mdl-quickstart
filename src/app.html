@@ -1,0 +1,25 @@
+<template>
+    <div mdl="layout" class="mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout-icon"></div>
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">Simple Layout</span>
+        <div class="mdl-layout-spacer"></div>
+        <nav-bar router.bind="router"></nav-bar>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">Simple Layout</span>
+      <nav-bar router.bind="router"></nav-bar>
+    </div>
+    <main class="mdl-layout__content">
+      <div class="page-host">
+        <!-- <router-view></router-view> -->
+        <p>
+            ${message}
+        </p>
+        <button mdl="button" class="mdl-button--raised mdl-js-ripple-effect">click me</button>
+      </div>
+    </main>
+    </div>
+</template>
